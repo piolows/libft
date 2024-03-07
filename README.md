@@ -39,6 +39,10 @@ These functions are clones of functions that already exist in C. We must mimic t
 
 These functions are either not part of the C Standard Library, or exist in a slightly different form. The subject file of the project specifies how these functions should behave.
 
-**ft_substr** takes a string, an index as an integer and a length. From the specified index up to the specified length, the contents of the string are duplicated onto a newly allocated string which is returned.
+**ft_substr()** takes a string, an index as an integer and a length. From the specified index up to the specified length, the contents of the string are duplicated onto a newly allocated string which is returned. If the index exceeds the length of the string, or the specified length is 0, a blank string is returned **(not the same as returning null!)**.
+
+**ft_strjoin()** takes two strings and joins them into a new allocated string. If one of the strings is null, a duplicate of the other string is returned.
+
+**ft_strtrim()**
 
 Project completed on November 11 2023 with bonus (125/100).
