@@ -25,7 +25,7 @@ These functions are clones of functions that already exist in C. We must mimic t
 
 **ft_strncmp()** takes two strings and compares their values up to a specified number of characters. If a difference is found, it returns the integer difference of the first different characters it encountered. If no difference is found, 0 is returned.
 
-**ft_memchr() and ft_memcmp** have the same functionality as ft_strchr() and ft_strncmp(), but applied to void pointers instead. We simply typecast to strings as usual.
+**ft_memchr() and ft_memcmp()** have the same functionality as ft_strchr() and ft_strncmp(), but applied to void pointers instead. We simply typecast to strings as usual.
 
 **ft_strnstr()** takes a "haystack" string and a "needle" string. Up to a specified length, it searches for the needle string in the haystack string, and if it is found, the pointer to its beginning in the haystack string is returned. If it is not found, null is returned.
 
