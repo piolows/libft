@@ -39,6 +39,6 @@ These functions are clones of functions that already exist in C. We must mimic t
 
 These functions are either not part of the C Standard Library, or exist in a slightly different form. The subject file of the project specifies how these functions should behave.
 
-
+**ft_substr** takes a string, an index as an integer and a length. From the specified index up to the specified length, the contents of the string are duplicated onto a newly allocated string which is returned.
 
 Project completed on November 11 2023 with bonus (125/100).
