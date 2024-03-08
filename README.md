@@ -43,6 +43,12 @@ These functions are either not part of the C Standard Library, or exist in a sli
 
 **ft_strjoin()** takes two strings and joins them into a new allocated string. If one of the strings is null, a duplicate of the other string is returned.
 
-**ft_strtrim()**
+**ft_strtrim()** takes two strings. The first string will be "trimmed" and the second string is the set of characters to trim from the beginning and end of the first string. The resulting trimmed string is returned as a newly allocated string. We can utilize the previously created ft_strchr() in this function. We pass every character of the string to ft_strchr() along with the set of characters to trim, and if any address is returned, we know one of the characters has been found.
+
+**ft_split()** takes a string and a character. The function splits up the string using the specified character as a separator, and returns a new array of strings holding the new strings which have been split up. This is the first usage of double pointers/arrays in the 42 cursus. We can move through an array of strings using an index, just like how we would move through a string. We must properly allocate the correct number of pointers, so we have a function that counts how many strings result from splitting the given string with the given character. We allocate an additional pointer to null-terminate the double array, just like we do with a string.
+
+**ft_itoa()** takes an integer and converts it into a newly allocated string. We use a function that counts the number of digits (including the minus symbol in the case of a negative number) so we can allocate the correct amount of space for the string.
+
+**ft_strmapi() and ft_striteri()** take a string and a pointer to a function. This is the first usage of function pointers in the 42 cursus. Both ft_strmapi() and ft_striteri() apply the passed function to every character of the passed string individually, however ft_striteri() modifies the string directly while ft_strmapi() returns a newly allocated string with the result.
 
 Project completed on November 11 2023 with bonus (125/100).
