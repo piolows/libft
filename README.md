@@ -55,8 +55,8 @@ These functions are either not part of the C Standard Library, or exist in a sli
 
 ### Part 3 - Bonus functions
 
-These functions introduce us to creating structures and linked lists. A struct is provided by the subject file which we must add to our header file. This struct simply contains a void pointer holding whatever content we choose to store in it, and a pointer to a "next" struct of the same kind, in order to create a linked list.
+These functions introduce us to creating structures and linked lists. A structure, commonly just called a struct, is a data type in which we can group several variables together and declare them all at once simply by declaring the struct. A struct is provided by the subject file which we must add to our header file. This struct simply contains a void pointer holding whatever content we choose to store in it, and a pointer to a "next" struct of the same kind, in order to create a linked list.
 
-**ft_lstnew()** 
+**ft_lstnew()**
 
 Project completed on November 11 2023 with bonus (125/100).
