@@ -55,8 +55,18 @@ These functions are either not part of the C Standard Library, or exist in a sli
 
 ### Part 3 - Bonus functions
 
-These functions introduce us to creating structures and linked lists. A structure, commonly just called a struct, is a data type in which we can group several variables together and declare them all at once simply by declaring the struct. A struct is provided by the subject file which we must add to our header file. This struct simply contains a void pointer holding whatever content we choose to store in it, and a pointer to a "next" struct of the same kind, in order to create a linked list.
+These functions introduce us to creating structures and linked lists. A structure, commonly just called a struct, is a data type in which we can group several variables together and declare them all at once simply by declaring the struct. A struct is provided by the subject file which we must add to our header file. This struct simply contains a void pointer holding whatever content we choose to store in it, and a pointer to a "next" struct of the same kind, in order to create a linked list. This provided struct is named t_list.
 
-**ft_lstnew()**
+**ft_lstnew()** is used to initialize a newly allocated t_list. It takes a void pointer "content" and sets the t_list's content to it. The t_list pointer to "next" is set to null. This is how we create "nodes" for our linked list.
+
+**ft_lstadd_front()** takes a pointer to the head (first node) of the list and a node to be added to the front (beginning) of the list. The new node's "next" pointer is set toe the current head, and the pointer to the head is set to the new node, therefore making it the new head of the list.
+
+**ft_lstsize()** returns the number of nodes in a list. This is achieved by using a simple while loop that goes through the list's nodes until the "next" pointer reaches null, counting each node.
+
+**ft_lstlast()** returns a pointer to the last node of the list. Similar to ft_lstsize(), we go through the list until the current node's "next" pointer is null, and return the node.
+
+**ft_lstadd_back()** takes a pointer to the head of the list and a node to be added to the back (end) of the list. We can use the previously made ft_lstlast() to get the last node of the list, and set its "next" pointer to the new node.
+
+
 
 Project completed on November 11 2023 with bonus (125/100).
