@@ -1,5 +1,3 @@
-<meta name="google-site-verification" content="SNtEhsD9ai0xCaFIxlOHJ2hoVveMKf-Iu_Sf_wGufDA" />
-
 # Libft
 ### Libft project from the 42 cursus.
 
