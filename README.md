@@ -67,6 +67,10 @@ These functions introduce us to creating structures and linked lists. A structur
 
 **ft_lstadd_back()** takes a pointer to the head of the list and a node to be added to the back (end) of the list. We can use the previously made ft_lstlast() to get the last node of the list, and set its "next" pointer to the new node.
 
+**ft_lstdelone()** takes a node and a pointer to a function called "del". Assuming this function frees whatever content we pass to it, we simply call the function and pass the node's content. We then free the pointer to the node.
 
+**ft_lstclear()** applies ft_lstdelone() on an entire list, and sets the pointer to the head of the list to null.
 
-Project completed on November 11 2023 with bonus (125/100).
+**ft_lstiter() and ft_lstmap()** take a pointer to the head of the list and a function pointer. The function is applied to the content of every node of the list. ft_lstiter() modifies the list directly, whereas ft_lstmap() creates a newly allocated list with the result. Because ft_lstmap() allocates a new list, it also takes a pointer to a "del" function, so that in case allocation of any node fails, we can use ft_lstclear() on the new list and return null.
+
+### Project completed on November 11 2023 with bonus (125/100).
