@@ -1,7 +1,7 @@
 # Libft
 ### Libft project from the 42 cursus.
 
-**This project entails creating a library of 40+ functions from scratch, many of which are clones of already existing functions. This project is a good way to master the basics of C, while also beginning to learn some more complex concepts for beginners, such as linked lists.**
+**This project entails creating a library of 40+ functions from scratch, many of which are clones of already existing functions. This project is a good way to master the basics of C, while also beginning to learn some more complex concepts for beginners, such as linked lists.** The subject PDF can be found in this repository.
 
 ### Part 1 - C Standard Library functions
 
@@ -73,4 +73,4 @@ These functions introduce us to creating structures and linked lists. A structur
 
 **ft_lstiter() and ft_lstmap()** take a pointer to the head of the list and a function pointer. The function is applied to the content of every node of the list. ft_lstiter() modifies the list directly, whereas ft_lstmap() creates a newly allocated list with the result. Because ft_lstmap() allocates a new list, it also takes a pointer to a "del" function, so that in case allocation of any node fails, we can use ft_lstclear() on the new list and return null.
 
-### Project completed on November 11 2023 with bonus (125/100).
+### Project completed on November 11 2023 with bonus requirements (125/100).
